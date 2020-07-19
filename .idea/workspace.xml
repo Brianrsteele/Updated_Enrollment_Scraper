@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a1a5aa62-ccc1-492d-99d8-5cae9e7954ac" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1cxx4ZIm2wataYz0EHTKG8xOI5d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1a5aa62-ccc1-492d-99d8-5cae9e7954ac" name="Default Changelist" comment="" />
+      <created>1591483854587</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591483854587</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="621" y="362" width="425" height="260" key="Github.ShareDialog" timestamp="1595175758765">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="621" y="362" width="425" height="260" key="Github.ShareDialog/67.27.1533.873@67.27.1533.873" timestamp="1595175758765" />
+    <state x="550" y="149" width="556" height="626" key="Github.UntrackedFilesDialog" timestamp="1595175823623">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="550" y="149" width="556" height="626" key="Github.UntrackedFilesDialog/67.27.1533.873@67.27.1533.873" timestamp="1595175823623" />
+    <state x="322" y="97" key="SettingsEditor" timestamp="1595175476340">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="322" y="97" key="SettingsEditor/67.27.1533.873@67.27.1533.873" timestamp="1595175476340" />
+  </component>
+</project>
