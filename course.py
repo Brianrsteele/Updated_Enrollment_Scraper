@@ -38,7 +38,7 @@ class Course:
         self.pre_reqs = pre_reqs
 
     def __repr__(self):
-        course_string = "\nDepartment: " + str(self.department) + " \nCourse Number = " + self.number + " \nTitle = " + self.title + " \nCredit Hours = " \
-                    + self.credit_hours + " \nCourse Level = " + self.course_level + " \nMnTC Goals = " + str(self.mntc_goals) + \
-                    " \nPre-Reqs = " + self.pre_reqs + " \nDescription =  " + self.description 
+        course_string = "\n\nDepartment: " + str(self.department) + ", Course Number: " + self.number + " \nTitle:" + self.title + " \nCredit Hours = " \
+                    + self.credit_hours + ", Course Level: " + self.course_level + " , MnTC Goals: " + str(self.mntc_goals) + \
+                    " \nPre-Reqs: " + self.pre_reqs + " \nDescription: " + self.description
         return course_string

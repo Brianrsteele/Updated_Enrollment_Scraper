@@ -7,20 +7,19 @@
 #
 
 
-
 class Textbook:
     """
-        Defines a textbok object. 
+        Defines a textbook object.
     """
 
-    def __init__(self, author, title, required=None, publisher=None, ISBN=None, \
+    def __init__(self, author, title, required=None, publisher=None, isbn=None,
                  edition=None, new_price=None, used_price=None):
         """Constructor - creates a textbook object.
-            :param reqiured, string, the required status of the textbook , i.e. "EITHER/OR"
+            :param required, string, the required status of the textbook , i.e. "EITHER/OR"
             :param title, string, the title of the textbook
             :param author, string, the last name of the author
             :param publisher, string, the name of the publisher
-            :param ISBN, string, the ISBN number of the textbook
+            :param isbn, string, the ISBN number of the textbook
             :param edition, string, the edition of the book
             :param new_price, float, the price of a new copy of the textbook
             :param used_price, the price of a used copy of the textbook
@@ -29,15 +28,14 @@ class Textbook:
         self.title = title
         self.author = author
         self.publisher = publisher
-        self.ISBN = ISBN
+        self.isbn = isbn
         self.edition = edition
         self.new_price = new_price
         self.used_price = used_price
       
     def __repr__(self):
-        return_string = 'Title = ' + self.title + '\n\nAuthor = ' + self.author \
-                        + '\n\nPublisher = ' + str(self.publisher) + '\n\nISBN = ' \
-                        + str(self.ISBN) + '\n\nEdition = ' + str(self.edition) \
-                        + '\n\nNew Price = ' + str(self.new_price) + '\n\nUsed Price = ' \
-                        + str(self.used_price)
+        return_string = '\n\n' + self.title + ', ' + self.author \
+                        + '\nPub: ' + str(self.publisher) + ', ISBN: ' + str(self.isbn) + ', Edition: ' + str(self.edition) \
+                        + '\nNew: ' + str(self.new_price) + ', Used: ' \
+                        + str(self.used_price) + '\nRequired: ' + self.required
         return return_string

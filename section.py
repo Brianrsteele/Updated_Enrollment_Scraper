@@ -70,13 +70,23 @@ class Section:
         self.textbooks = textbooks
 
     def __repr__(self):
-        return "\n\nSemester = " + str(self.semester) + " \n\nCourse = " + str(self.course) + " \n\nSection Num = " + str(self.section_number) + " \n\nStart Date = " \
-               + str(self.start_date) + " \n\nEnd Date = " + str(self.end_date) + " \n\nMeeting Times = " + str(self.meeting_times) \
-               + "\n\nStatus = " + self.status + "\n\nInstructor = " + str(self.instructor) \
-               + "\n\nDelivery = " + self.delivery_method + "\n\nSchool = " + str(self.offered_through) \
-                + "\n\nLocation = " + self.location + "\n\nSize = " + self.size + "\n\nEnrollment = "+ self.enrolled \
-                + "\n\nFull Refund Date = " + str(self.full_refund_date) + "\n\nLast Add Date = " \
-                + str(self.last_add_date) + "\n\nLast Drop Date = " + str(self.last_drop_date) \
-                + "\n\nLast Withdraw Date = " + str(self.last_withdraw_date) + "\n\nNon-Resident Tuition = " \
-                + str(self.nonresident_tuition) + "\n\nResident Tuition = " + str(self.resident_tuition) \
-                + "\n\nFees = " + str(self.approximate_course_fees) + "\n\nTextbooks =" + str(self.textbooks)
+        return "\nSemester: " + str(self.semester) + "\nSchool: " + str(self.offered_through) \
+               + " \n\nCourse ----------------" + str(self.course) + "\n\nSection ----------------" \
+                +  "\n\nSection Num: " + str(self.section_number) + ", Status: " + self.status \
+                + " \nStart Date: " + str(self.start_date) + ", End Date: " + str(self.end_date) \
+                + " \nMeeting Times:" + str(self.meeting_times) \
+                + "\nInstructor = " + str(self.instructor) \
+               + "\nDelivery: " + self.delivery_method  \
+                + ", Location: " + self.location + "\nSize:" + self.size + ", Enrollment = "+ self.enrolled \
+                + "\n\nDates ----------------" + "\n\nFull Refund: " + str(self.full_refund_date) + "\nLast Add: " \
+                + str(self.last_add_date) + "\nLast Drop Date: " + str(self.last_drop_date) \
+                + "\nLast Withdraw: " + str(self.last_withdraw_date) \
+                + '\n\nTuition ----------------' + "\n\nNon-Resident: $" \
+                + str(self.nonresident_tuition) + ", Resident: $" + str(self.resident_tuition) \
+                + ", Fees: $" + str(self.approximate_course_fees) + "\n\nTextbooks ----------------" + self.print_textbooks()
+
+    def print_textbooks(self):
+        return_string = ''
+        for book in self.textbooks:
+            return_string = return_string + str(book)
+        return return_string

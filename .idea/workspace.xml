@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1a5aa62-ccc1-492d-99d8-5cae9e7954ac" name="Default Changelist" comment="Initial commit">
+    <list default="true" id="a1a5aa62-ccc1-492d-99d8-5cae9e7954ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course.py" beforeDir="false" afterPath="$PROJECT_DIR$/course.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/courseSectionPageScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/courseSectionPageScraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/section.py" beforeDir="false" afterPath="$PROJECT_DIR$/section.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/textbook.py" beforeDir="false" afterPath="$PROJECT_DIR$/textbook.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +26,35 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager">
+    <configuration name="courseSectionPageScraper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Updated_Enrollment_Scraper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/courseSectionPageScraper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.courseSectionPageScraper" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -42,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595176082060</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1595176504372</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595176504372</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -50,10 +89,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="306" y="27" width="912" height="873" key="CommitChangelistDialog2" timestamp="1595176243000">
+    <state x="306" y="27" width="912" height="586" key="CommitChangelistDialog2" timestamp="1595176504254">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state x="306" y="27" width="912" height="873" key="CommitChangelistDialog2/67.27.1533.873@67.27.1533.873" timestamp="1595176243000" />
+    <state x="306" y="27" width="912" height="586" key="CommitChangelistDialog2/67.27.1533.873@67.27.1533.873" timestamp="1595176504254" />
     <state x="621" y="362" width="425" height="260" key="Github.ShareDialog" timestamp="1595175758765">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
@@ -62,9 +101,33 @@
       <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state x="550" y="149" width="556" height="626" key="Github.UntrackedFilesDialog/67.27.1533.873@67.27.1533.873" timestamp="1595175823623" />
-    <state x="322" y="97" key="SettingsEditor" timestamp="1595175476340">
+    <state width="1510" height="349" key="GridCell.Tab.0.bottom" timestamp="1595444097294">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state x="322" y="97" key="SettingsEditor/67.27.1533.873@67.27.1533.873" timestamp="1595175476340" />
+    <state width="1510" height="349" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1595444097294" />
+    <state width="1510" height="349" key="GridCell.Tab.0.center" timestamp="1595444097293">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state width="1510" height="349" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1595444097293" />
+    <state width="1510" height="349" key="GridCell.Tab.0.left" timestamp="1595444097293">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state width="1510" height="349" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1595444097293" />
+    <state width="1510" height="349" key="GridCell.Tab.0.right" timestamp="1595444097294">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state width="1510" height="349" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1595444097294" />
+    <state x="322" y="97" key="SettingsEditor" timestamp="1595178509881">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="322" y="97" key="SettingsEditor/67.27.1533.873@67.27.1533.873" timestamp="1595178509881" />
+    <state x="428" y="198" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595176513281">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="428" y="198" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1533.873@67.27.1533.873" timestamp="1595176513281" />
+    <state x="496" y="212" key="search.everywhere.popup" timestamp="1595176823759">
+      <screen x="67" y="27" width="1533" height="873" />
+    </state>
+    <state x="496" y="212" key="search.everywhere.popup/67.27.1533.873@67.27.1533.873" timestamp="1595176823759" />
   </component>
 </project>
