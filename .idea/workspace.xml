@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a1a5aa62-ccc1-492d-99d8-5cae9e7954ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/course.py" beforeDir="false" afterPath="$PROJECT_DIR$/course.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/courseSectionPageScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/courseSectionPageScraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/section.py" beforeDir="false" afterPath="$PROJECT_DIR$/section.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/textbook.py" beforeDir="false" afterPath="$PROJECT_DIR$/textbook.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,18 +78,26 @@
       <option name="project" value="LOCAL" />
       <updated>1595176504372</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Cleaned up output for course, section, textbook classes. Cleaned up courseSectionPageScraper.py to be more PEP 8 compatible.">
+      <created>1595452365562</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595452365562</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Cleaned up output for course, section, textbook classes. Cleaned up courseSectionPageScraper.py to be more PEP 8 compatible." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up output for course, section, textbook classes. Cleaned up courseSectionPageScraper.py to be more PEP 8 compatible." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="306" y="27" width="912" height="586" key="CommitChangelistDialog2" timestamp="1595176504254">
+    <state x="306" y="27" width="912" height="586" key="CommitChangelistDialog2" timestamp="1595452365470">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state x="306" y="27" width="912" height="586" key="CommitChangelistDialog2/67.27.1533.873@67.27.1533.873" timestamp="1595176504254" />
+    <state x="306" y="27" width="912" height="586" key="CommitChangelistDialog2/67.27.1533.873@67.27.1533.873" timestamp="1595452365470" />
     <state x="621" y="362" width="425" height="260" key="Github.ShareDialog" timestamp="1595175758765">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
@@ -101,30 +106,30 @@
       <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state x="550" y="149" width="556" height="626" key="Github.UntrackedFilesDialog/67.27.1533.873@67.27.1533.873" timestamp="1595175823623" />
-    <state width="1510" height="349" key="GridCell.Tab.0.bottom" timestamp="1595444097294">
+    <state width="1510" height="2" key="GridCell.Tab.0.bottom" timestamp="1595517572885">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1510" height="349" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1595444097294" />
-    <state width="1510" height="349" key="GridCell.Tab.0.center" timestamp="1595444097293">
+    <state width="1510" height="2" key="GridCell.Tab.0.bottom/67.27.1533.873@67.27.1533.873" timestamp="1595517572885" />
+    <state width="1510" height="2" key="GridCell.Tab.0.center" timestamp="1595517572884">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1510" height="349" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1595444097293" />
-    <state width="1510" height="349" key="GridCell.Tab.0.left" timestamp="1595444097293">
+    <state width="1510" height="2" key="GridCell.Tab.0.center/67.27.1533.873@67.27.1533.873" timestamp="1595517572884" />
+    <state width="1510" height="2" key="GridCell.Tab.0.left" timestamp="1595517572884">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1510" height="349" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1595444097293" />
-    <state width="1510" height="349" key="GridCell.Tab.0.right" timestamp="1595444097294">
+    <state width="1510" height="2" key="GridCell.Tab.0.left/67.27.1533.873@67.27.1533.873" timestamp="1595517572884" />
+    <state width="1510" height="2" key="GridCell.Tab.0.right" timestamp="1595517572884">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state width="1510" height="349" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1595444097294" />
+    <state width="1510" height="2" key="GridCell.Tab.0.right/67.27.1533.873@67.27.1533.873" timestamp="1595517572884" />
     <state x="322" y="97" key="SettingsEditor" timestamp="1595178509881">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
     <state x="322" y="97" key="SettingsEditor/67.27.1533.873@67.27.1533.873" timestamp="1595178509881" />
-    <state x="428" y="198" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595176513281">
+    <state x="428" y="198" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1595452393720">
       <screen x="67" y="27" width="1533" height="873" />
     </state>
-    <state x="428" y="198" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1533.873@67.27.1533.873" timestamp="1595176513281" />
+    <state x="428" y="198" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1533.873@67.27.1533.873" timestamp="1595452393720" />
     <state x="496" y="212" key="search.everywhere.popup" timestamp="1595176823759">
       <screen x="67" y="27" width="1533" height="873" />
     </state>

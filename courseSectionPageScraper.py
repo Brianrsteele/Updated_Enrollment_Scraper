@@ -12,7 +12,6 @@ import school
 import textbook
 import timeUtilities
 
-
 # read an example html file as a string
 with open('sample_pages/fees_textbooks.html', 'r') as file:
     page_file = file.read()
@@ -24,7 +23,7 @@ dom = etree.HTML(page_file)
 campus_name_raw = dom.xpath('//*[@id="main"]/table[3]/tbody/tr[2]/td[1]/text()')
 # strip whitespace, and get rid of '.
 campus_name = campus_name_raw[1].strip()[:-1]
-#create a campus object
+# create a campus object
 currentCampus = campus.Campus(campus_name)
 
 # find the name of the school
@@ -51,7 +50,7 @@ department_raw = dom.xpath('//*[@id="main"]/table[1]/tbody[2]/tr/td[3]/text()')
 # strip whitespace
 department_abbreviation = department_raw[0].strip()
 # create Department object
-currentDepartment = department.Department(department_abbreviation, school = currentSchool)
+currentDepartment = department.Department(department_abbreviation, school=currentSchool)
 
 # find the course number
 course_number_raw = dom.xpath('//*[@id="main"]/table[1]/tbody[2]/tr/td[4]/text()')
@@ -78,7 +77,7 @@ if "(Prerequisites:" in description:
     prerequisites = prerequisites[2:-2]
 else:
     prerequisites = "Error"
-    
+
 # Find the credit hours
 credit_hours_raw = dom.xpath('//*[@id="main"]/table[1]/tbody[2]/tr/td[10]/text()')
 # Strip white space
@@ -88,7 +87,7 @@ credit_hours = credit_hours_raw[0].strip()
 course_level_raw = dom.xpath('//*[@id="main"]//text()[contains(.,"Undergraduate") or contains(.,"Graduate")]')
 # strip white space
 course_level = course_level_raw[0].strip()
-        
+
 # find the mnTC goals
 mntc_goals_raw = dom.xpath('//*[@id="main"]//text()[contains(.,"Goal")]')
 # strip whitespace and store as array
@@ -98,8 +97,8 @@ for goal in mntc_goals_raw:
         mntc_goals.append(goal.strip())
 
 # Create Course
-currentCourse = course.Course(currentDepartment, course_number, course_title,\
-                               description, credit_hours, course_level, mntc_goals, prerequisites)
+currentCourse = course.Course(currentDepartment, course_number, course_title,
+                              description, credit_hours, course_level, mntc_goals, prerequisites)
 
 # Create Semester and section
 semester_raw = dom.xpath('//*[@id="main"]/h1/text()[2]')
@@ -167,9 +166,9 @@ for fac in faculty_raw:
     if len(fac) > 1:
         currentFaculty = faculty.Faculty(fac[0].strip(), fac[1].strip())
         faculty_list.append(currentFaculty)
-    
+
 # Find the Course Delivery Method
-delivery_raw = dom.xpath('//*[@id="main"]/table[1]/tbody[2]/tr/td[13]//text()') 
+delivery_raw = dom.xpath('//*[@id="main"]/table[1]/tbody[2]/tr/td[13]//text()')
 if len(delivery_raw) == 1:
     delivery = "In-Person"
 else:
@@ -241,7 +240,7 @@ for element in textbooks_raw:
 # each textbook is now a list with 16 elements,
 # you can divide the list by 16 to get a count of
 # textbooks for the course.
-num_textbooks = (len(textbooks_raw_list))/16
+num_textbooks = (len(textbooks_raw_list)) / 16
 # Create a list to hold the processed textbook data.
 section_textbook_list = []
 for tb in range(int(num_textbooks)):
@@ -249,32 +248,32 @@ for tb in range(int(num_textbooks)):
     # textbook data...
     textbook_info = textbooks_raw_list[(tb * 16): (tb * 16) + 16]
     # Create a textbook object
-    currentTextbook = textbook.Textbook(textbook_info[5], textbook_info[3], required=textbook_info[1], \
-                                        publisher=textbook_info[7], isbn=textbook_info[9], \
-                                        edition=textbook_info[11], new_price=textbook_info[13], \
+    currentTextbook = textbook.Textbook(textbook_info[5], textbook_info[3], required=textbook_info[1],
+                                        publisher=textbook_info[7], isbn=textbook_info[9],
+                                        edition=textbook_info[11], new_price=textbook_info[13],
                                         used_price=textbook_info[15])
     # add the textbook object to the list of textbooks for the sectoin
     section_textbook_list.append(currentTextbook)
 
 # create section object
-currentSection = section.Section(currentSemester, currentCourse, section_number, \
-                                 meeting_times = weekly_meetings_list, \
-                                 start_date = startDate, \
-                                 end_date = endDate, \
-                                 status = section_status, \
-                                 instructor = faculty_list, \
-                                 delivery_method = delivery, \
-                                 offered_through = currentSchool, \
-                                 location = location_name, \
-                                 size = section_size, \
-                                 enrolled = enrollment, \
-                                 full_refund_date = refundDate, \
-                                 last_add_date = lastAddDate, \
-                                 last_drop_date = lastDropDate, \
-                                 last_withdraw_date = lastWithdrawDate, \
-                                 nonresident_tuition = tuition_non_resident, \
-                                 resident_tuition = tuition_resident, \
-                                 approximate_course_fees = fees, \
-                                 textbooks = section_textbook_list)
+currentSection = section.Section(currentSemester, currentCourse, section_number,
+                                 meeting_times=weekly_meetings_list,
+                                 start_date=startDate,
+                                 end_date=endDate,
+                                 status=section_status,
+                                 instructor=faculty_list,
+                                 delivery_method=delivery,
+                                 offered_through=currentSchool,
+                                 location=location_name,
+                                 size=section_size,
+                                 enrolled=enrollment,
+                                 full_refund_date=refundDate,
+                                 last_add_date=lastAddDate,
+                                 last_drop_date=lastDropDate,
+                                 last_withdraw_date=lastWithdrawDate,
+                                 nonresident_tuition=tuition_non_resident,
+                                 resident_tuition=tuition_resident,
+                                 approximate_course_fees=fees,
+                                 textbooks=section_textbook_list)
 
 print("Section Information ----------------\n", currentSection.__repr__())
