@@ -59,15 +59,19 @@ class MinnStateSystem(System):
                           ('0147', 'Vermillion Community College', 'VCC', 'https://www.vcc.edu'),
                           ('0074', 'Winona State University', 'WSU', 'https://www.winona.edu') ]
 
-    def __init__(self, name, abbreviation, url=None, number=None):
+    def __init__(self, name="Minnesota State Colleges and Universities",
+                 abbreviation="Minnstate", url=None, number=None):
         """
            Constructor for MinnStateSystem objects
            :param abbreviation: string, the abbreviation of the MinnState system
            :param name: string, The full name of the MinnState system
            :param url: string, The url of the MinnStateSystem including https.
         """
-        super(System, self).__init__(name, abbreviation, url)
+        System.__init__(self, name, abbreviation, url)
         self.number = number
+        self.semesters = {}
+
 
     def __repr__(self):
-        return self.number + ", " + self.abbreviation + ", " + self.name + ", " + self.url
+        return str(self.number) + ", " + str(self.abbreviation) + ", " + self.name + ", " \
+               + str(self.url) + "\n\nSemester ----------- " + str(self.semesters)

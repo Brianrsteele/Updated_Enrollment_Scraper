@@ -26,6 +26,7 @@ class Semester:
         self.start_date = start_date
         self.end_date = end_date
         self.semester_id = self.calculate_mn_state_semester_id()
+        self.schools = {}
 
     def calculate_mn_state_semester_id(self):
         """
@@ -46,12 +47,14 @@ class Semester:
             semester_id = str(int(self.year) + 1) + '1'
         else:
             raise Exception("Semester_name must be FALL, SPRING, or SUMMER")
-
         return semester_id
+
+
+
 
     def __repr__(self):
         return "Year = " + self.year + " Name = " + self.semester_name + " Start Date = " + str(self.start_date) + " End Date " + str(self.end_date) \
-               + " Semester Id = " + self.semester_id
+               + " Semester Id = " + self.semester_id + "\n\n\tSchools ---------- " + str(self.schools)
                
     def __str__(self):
         return self.semester_name + " " + self.year

@@ -39,13 +39,13 @@ class School:
         self.city = city
         self.state = state
         self.postal_code = postal_code
+        self.departments = {}
         minnstateUtilities.populateSchoolInformation(self)
 
     
 
     def __repr__(self):
-        school_string = "Abbreviation = " + self.abbreviation + " Full Name = " + self.full_name + " Id Number = " + self.id_number + " URL = " + self.url + " Street Address = " \
-                        + self.street_address + " City = " + self.city + " State = " + self.state + " Postal Code = " + self.postal_code
+        school_string = str(self.abbreviation) + "\n\n\t\tDepartments ---------- " + str(self.departments)
         return school_string
 
     def __str__(self):

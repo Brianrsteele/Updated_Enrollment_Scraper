@@ -13,7 +13,7 @@ class Course:
         Course objects will be aggregated into a courses_list in the Department class.
     """
 
-    def __init__(self, department, number, title=None, description=None, credit_hours=None, course_level=None,
+    def __init__(self, number, title=None, description=None, credit_hours=None, course_level=None,
                  mntc_goals=None, pre_reqs=None):
         """
         Constructor for Course objects.
@@ -26,8 +26,6 @@ class Course:
         :param mntc_goals: list of MntcGoal objects: a list of objects representing MnTC goals".
         :return: None
         """
-
-        self.department = department
         self.number = number
         self.title = title
         self.description = description
@@ -35,11 +33,17 @@ class Course:
         self.course_level = course_level
         self.mntc_goals = mntc_goals
         self.pre_reqs = pre_reqs
+        self.sections = {}
 
     def __repr__(self):
-        course_string = "\n\nDepartment: " + str(self.department) + ", Course Number: " \
-                        + self.number + " \nTitle:" + self.title + " \nCredit Hours = " \
+        """
+            Create a human readable output for the course.
+        """
+        course_string = "Course Number: " \
+                        + self.number + " Title:" + self.title + " Credit Hours = " \
                         + self.credit_hours + ", Course Level: " + self.course_level \
-                        + " , MnTC Goals: " + str(self.mntc_goals) + " \nPre-Reqs: " \
-                        + self.pre_reqs + " \nDescription: " + self.description
+                        + " , MnTC Goals: " + str(self.mntc_goals) + " Pre-Reqs: " \
+                        + self.pre_reqs + " Description: " + self.description \
+                        + str(self.sections)
+
         return course_string

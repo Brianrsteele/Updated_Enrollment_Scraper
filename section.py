@@ -13,15 +13,13 @@ class Section:
 
     """
 
-    def __init__(self, semester, course, section_number, meeting_times=None, start_date=None, end_date=None,
-                 status=None, instructor=None, delivery_method=None, offered_through=None,
+    def __init__(self, section_number, meeting_times=None, start_date=None, end_date=None,
+                 status=None, instructor=None, delivery_method=None,
                  location=None, size=None, enrolled=None, full_refund_date=None, last_add_date=None,
                  last_drop_date=None, last_withdraw_date=None, resident_tuition=None,
                  nonresident_tuition=None, approximate_course_fees=None, textbooks=None):
         """
         Constructor for section objects.
-        :param semester: A semester object.
-        :param course: A course object.
         :param section_number: a string, to retain leading zeros, ie "01"
         :param meeting_times: List of MeetingTime objects holding the meeting time information about the course
         :param start_date: a DateTime object containing the starting date of the course, which might be different
@@ -31,7 +29,6 @@ class Section:
         :param status: string of the current course status, should be "Open", "Full", or "Cancelled"
         :param instructor: list of instructor objects representing the instructors teaching the course".
         :param delivery_method: string: the delivery_method as listed on class schedule.
-        :param offered_through: School, the campus listed as offering the course
         :param location: String, the location of the class
         :param size: int, the number of possible student who could enroll in the course.
         :param enrolled: int, the number of students actually enrolled in the course.
@@ -47,8 +44,6 @@ class Section:
         :return: None
         """
 
-        self.semester = semester
-        self.course = course
         self.section_number = section_number
         self.meeting_times = meeting_times
         self.start_date = start_date
@@ -56,7 +51,6 @@ class Section:
         self.status = status
         self.instructor = instructor
         self.delivery_method = delivery_method
-        self.offered_through = offered_through
         self.location = location
         self.size = size
         self.enrolled = enrolled
@@ -70,20 +64,19 @@ class Section:
         self.textbooks = textbooks
 
     def __repr__(self):
-        return "\nSemester: " + str(self.semester) + "\nSchool: " + str(self.offered_through) \
-               + " \n\nCourse ----------------" + str(self.course) + "\n\nSection ----------------" \
-                +  "\n\nSection Num: " + str(self.section_number) + ", Status: " + self.status \
-                + " \nStart Date: " + str(self.start_date) + ", End Date: " + str(self.end_date) \
-                + " \nMeeting Times:" + str(self.meeting_times) \
-                + "\nInstructor = " + str(self.instructor) \
-               + "\nDelivery: " + self.delivery_method  \
-                + ", Location: " + self.location + "\nSize:" + self.size + ", Enrollment = "+ self.enrolled \
-                + "\n\nDates ----------------" + "\n\nFull Refund: " + str(self.full_refund_date) + "\nLast Add: " \
-                + str(self.last_add_date) + "\nLast Drop Date: " + str(self.last_drop_date) \
-                + "\nLast Withdraw: " + str(self.last_withdraw_date) \
-                + '\n\nTuition ----------------' + "\n\nNon-Resident: $" \
+        return "\n\n\t\t\t\t\t\tSection ----------------" \
+                +  "\n\n\t\t\t\t\t\t\tSection Num: " + str(self.section_number) + ", Status: " + self.status \
+                + " Start Date: " + str(self.start_date) + ", End Date: " + str(self.end_date) \
+                + " Meeting Times:" + str(self.meeting_times) \
+                + " Instructor = " + str(self.instructor) \
+               + " Delivery: " + self.delivery_method  \
+                + ", Location: " + self.location + "Size:" + self.size + ", Enrollment = "+ self.enrolled \
+                + "Dates: " + "Full Refund: " + str(self.full_refund_date) + " Last Add: " \
+                + str(self.last_add_date) + "Last Drop Date: " + str(self.last_drop_date) \
+                + " Last Withdraw: " + str(self.last_withdraw_date) \
+                + ' Tuition: ' + "Non-Resident: $" \
                 + str(self.nonresident_tuition) + ", Resident: $" + str(self.resident_tuition) \
-                + ", Fees: $" + str(self.approximate_course_fees) + "\n\nTextbooks ----------------" + self.print_textbooks()
+                + ", Fees: $" + str(self.approximate_course_fees)  + self.print_textbooks()
 
     def print_textbooks(self):
         return_string = ''
